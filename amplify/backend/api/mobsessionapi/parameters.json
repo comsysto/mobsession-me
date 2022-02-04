@@ -1,0 +1,7 @@
+{
+  "AppSyncApiName": "mobsessionapi",
+  "CreateAPIKey": 1,
+  "APIKeyExpirationEpoch": 1671440158,
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}

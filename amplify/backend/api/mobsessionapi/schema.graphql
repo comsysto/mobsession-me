@@ -1,0 +1,32 @@
+type SessionData @model{
+    id: String!
+    intervalInMinutes: Int!
+    participants: [ParticipantData]
+    expiresAt: AWSTimestamp @ttl
+    timerEvents: [TimerEventData]
+}
+
+type Subscription {
+    onUpdateSessionDataById(id:String!): SessionData @aws_subscribe(mutations:["updateSessionData"])
+}
+
+type ParticipantData {
+    id: ID!
+    name: String!
+    role: ParticipantRoleData
+}
+
+type TimerEventData {
+    type: TimerEventTypeData
+    timestampSeconds: Int!
+}
+
+enum TimerEventTypeData{
+    START,
+    PAUSE
+}
+
+enum ParticipantRoleData{
+    DRIVER,
+    NAVIGATOR
+}

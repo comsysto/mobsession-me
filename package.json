@@ -1,0 +1,92 @@
+{
+  "name": "mob-session-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-amplify/ui-react": "^1.2.22",
+    "@babel/core": "7.15.8",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/styled-components": "5.1.15",
+    "aws-amplify": "4.3.4",
+    "bulma": "0.9.3",
+    "bulma-slider": "^2.0.4",
+    "bulma-tooltip": "3.0.2",
+    "CBuffer": "^2.2.0",
+    "luxon": "2.0.2",
+    "react": "^17.0.2",
+    "react-bootstrap-icons": "1.6.1",
+    "react-bulma-components": "4.0.7",
+    "react-device-detect": "2.1.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "^4.0.3",
+    "rxjs": "7.4.0",
+    "styled-components": "5.3.3",
+    "unique-names-generator": "4.6.0",
+    "web-vitals": "2.1.2"
+  },
+  "devDependencies": {
+    "@aws-amplify/cli": "6.3.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/luxon": "2.0.5",
+    "@types/react-dom": "17.0.10",
+    "@types/react-router-dom": "5.3.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "clipboardy": "^2.3.0",
+    "cypress": "8.7.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-unused-imports": "^1.1.4",
+    "graphql-ttl-transformer": "^1.1.0",
+    "jest-junit": "13.0.0",
+    "prettier": "2.4.1",
+    "sass": "1.43.4",
+    "typescript": "^4.4.4"
+  },
+  "jest-junit": {
+    "outputDirectory": "reports",
+    "outputName": "jest-reports.xml",
+    "ancestorSeparator": " › ",
+    "uniqueOutputName": "false",
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "CI=true react-scripts test",
+    "test:watch": "react-scripts test --watch",
+    "test-with-reports": "react-scripts test --testResultsProcessor=\"jest-junit\"",
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-empty-pattern": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
